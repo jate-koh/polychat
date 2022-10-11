@@ -1,0 +1,29 @@
+# Generated Files: @expo/next-adapter@4.0.12
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+
+# Build Files
+.next/
+dist/
+
+# Files
+
+# Debug
+npm-debug.log*
+nom-error.log*
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+.env
+archives/
