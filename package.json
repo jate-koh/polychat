@@ -38,7 +38,8 @@
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "eas-cli": "2.3.0",
     "env-cmd": "^10.1.0",
-    "expo-modules-autolinking": "0.10.1"
+    "expo-modules-autolinking": "0.10.1",
+    "prettier": "^2.7.1"
   },
   "private": true
 }
