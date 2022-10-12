@@ -6,22 +6,39 @@
     "type": "git",
     "url": "https://github.com/jate-koh/polychat"
   },
+  "resolutions": {
+    "@expo/config-plugins": "~5.0.0",
+    "@expo/prebuild-config": "~5.0.0",
+    "expo-modules-autolinking": "0.10.1"
+  },
   "scripts": {
     "start": "expo start",
+    "start:clear": "expo start --clear",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:preview": "eas build -p ios --profile preview",
+    "build:production": "eas build -p ios --profile development"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
     "expo": "~46.0.13",
     "expo-status-bar": "~1.4.0",
+    "expo-updates": "^0.14.6",
     "firebase": "^9.11.0",
+    "path": "^0.12.7",
     "react": "18.0.0",
     "react-native": "0.69.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.1.6",
+    "@expo/config-plugins": "5.0.0",
+    "@expo/metro-config": "^0.4.0",
+    "@expo/prebuild-config": "5.0.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "eas-cli": "2.3.0",
+    "env-cmd": "^10.1.0",
+    "expo-modules-autolinking": "0.10.1"
   },
   "private": true
 }

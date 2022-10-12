@@ -1,7 +1,4 @@
-# Generated Files: @expo/next-adapter@4.0.12
-node_modules/**/*
-.expo/*
-npm-debug.*
+# @expo/next-adapter@4.0.12
 *.jks
 *.p8
 *.p12
@@ -11,19 +8,32 @@ npm-debug.*
 web-build/
 web-report/
 
-# Build Files
-.next/
-dist/
+# VS Code
+.vscode/
+*.code-workspace
 
 # Files
+node_modules/
+.next/
+.expo/
+dist/
+
 
 # Debug
-npm-debug.log*
-nom-error.log*
+npm-debug.*
+npm-error.log*
 yarn-debug.log*
 yarn-error.log*
 
-# misc
-.DS_Store
+# Environment
 .env
+.env.staging
+.env.development
+.env.production
+
+# Misc
+.DS_Store
 archives/
+
+# Jate's Personal Files
+to-do-list.txt
