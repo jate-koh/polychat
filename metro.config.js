@@ -17,5 +17,5 @@
 //     },
 // }
 
-console.log("> Running Metro Config");
+console.log("Running Metro Config");
 module.exports = defaultConfig;

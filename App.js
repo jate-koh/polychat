@@ -1,51 +1,16 @@
-import React ,{ useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { NativeBaseProvider, Box } from 'native-base'
+import { StyleSheet, Text, View } from 'react-native';
+import { NativeBaseProvider } from 'native-base';
+import React from 'react';
 
-import { db } from './data/firebase-config'
-import { collection, getDocs } from 'firebase/firestore'
+import Routes from './src/routes';
+import { AuthContextProvider } from './src/utils/auth/AuthContext';
 
 export default function App() {
-    const [users, setUsers] = useState([])
-    const collectionRef = collection(db, "testdb")
-  
-    //console.log(process.env.REACT_APP_PROJECT_ID);
-
-    useEffect( () => {
-      const getUsers = async () => {
-        const data = await getDocs(collectionRef)
-        setUsers(data.docs.map( (doc) => ({...doc.data(), id: doc.id})))
-      }
-  
-      getUsers();
-    }, [])
-  
-    return (
-      // <View style={styles.container}>
-      //   <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
-      // </View>
+  return (
+    <AuthContextProvider>
       <NativeBaseProvider>
-        <View style={styles.container}>
-          <Box> Hello World! </Box>
-          {users.map( (user) => {
-            return(
-              <Text>Name: {user.firstname}</Text>
-            );
-          } 
-        )}
-        </View>
+        <Routes />
       </NativeBaseProvider>
-    );
-  }
-  
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    text: {
-      fontSize: 16,
-    },
-});
+    </AuthContextProvider>
+  );
+}
