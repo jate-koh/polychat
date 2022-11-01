@@ -9,9 +9,9 @@ This project is part of CPE327 Software Engineering subject.
 
 ### Multiple Source of Repos
 
-This repository is one of our repositories regarding our project, this one is owned by PackHubTH
+This repository is one of our repositories regarding our project, this one is owned by [jate-koh](https://github.com/jate-koh)
 
-Another [repository](https://github.com/jate-koh/polychat) is owned by jate-koh can also be used as another source of code and reference.
+Another [repository](https://github.com/PackHubTH/polychat-project) is owned by [PackHubTH](https://github.com/PackHubTH) can also be used as another source of code and reference.
 
 ### Commiting and Creating new branch
 
