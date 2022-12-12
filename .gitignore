@@ -1,4 +1,3 @@
-
 # Files
 .vscode/*
 !.vscode/extensions.json
@@ -28,3 +27,34 @@ yarn-debug.log*
 *.mobileprovision
 *.orig.*
 web-build/
+web-report/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Files
+node_modules/
+.next/
+.expo/
+dist/
+
+# Debug
+npm-debug.*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.staging
+.env.development
+.env.production
+
+# Misc
+.DS_Store
+archives/
+
+# Jate's Personal Files
+to-do-list.txt
+
