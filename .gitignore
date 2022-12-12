@@ -1,4 +1,25 @@
-# @expo/next-adapter@4.0.12
+# Files
+.vscode/*
+!.vscode/extensions.json
+node_modules/
+.expo/
+dist/
+
+# Debug & Logs
+logs/
+*.log
+npm-debug.log*
+npm-error.log*
+yarn-error.log*
+yarn-debug.log*
+
+# Environment Files
+*.env
+
+# macOS
+.DS_Store
+
+# Extras
 *.jks
 *.p8
 *.p12
@@ -18,7 +39,6 @@ node_modules/
 .expo/
 dist/
 
-
 # Debug
 npm-debug.*
 npm-error.log*
@@ -37,3 +57,4 @@ archives/
 
 # Jate's Personal Files
 to-do-list.txt
+
